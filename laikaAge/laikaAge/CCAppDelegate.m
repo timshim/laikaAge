@@ -3,7 +3,7 @@
 //  laikaAge
 //
 //  Created by Tim Shim on 1/10/13.
-//  Copyright (c) 2013 Code Coalition. All rights reserved.
+//  Copyright (c) 2013 Tim Shim. All rights reserved.
 //
 
 #import "CCAppDelegate.h"

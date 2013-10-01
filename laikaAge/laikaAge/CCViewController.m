@@ -3,7 +3,7 @@
 //  laikaAge
 //
 //  Created by Tim Shim on 1/10/13.
-//  Copyright (c) 2013 Code Coalition. All rights reserved.
+//  Copyright (c) 2013 Tim Shim. All rights reserved.
 //
 
 #import "CCViewController.h"
@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"Hello World");
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,12 +27,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)convertAge:(UIButton *)sender
-{
-    float laikaAge = [self.ageOfLaika.text floatValue];
-    float humanAge = laikaAge * 7;
+- (IBAction)convertAge:(UIButton *)sender {
+    int laikaAge = [self.laikaAge.text integerValue];
+    int convertedAge = laikaAge * 7;
     
-    self.showAge.text = [NSString stringWithFormat:@"%f", humanAge];
+    self.humanAge.text = [NSString stringWithFormat:@"%i", convertedAge];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.laikaAge endEditing:YES];
 }
 
 @end
