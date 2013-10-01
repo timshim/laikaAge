@@ -31,8 +31,7 @@
     int convertedAge;
     
     if (laikaAge > 2) {
-        int newLaikaAge = laikaAge - 2;
-        convertedAge = (10.5 * 2) + (newLaikaAge * 4);
+        convertedAge = (10.5 * 2) + ((laikaAge - 2) * 4);
     } else {
         convertedAge = laikaAge * 10.5;
     }
