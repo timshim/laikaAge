@@ -30,8 +30,8 @@
             NSLog(@"%i bottles of beer on the wall, %i bottles of beer,\nTake one down, pass it around, %i bottle of beer on the wall", bottles, bottles, leftoverBottles);
         } else {
                 NSLog(@"%i bottles of beer on the wall, %i bottles of beer,\nTake one down, pass it around, %i bottles of beer on the wall", bottles, bottles, leftoverBottles);
-            }
         }
+    }
 }
 
 - (void)didReceiveMemoryWarning
