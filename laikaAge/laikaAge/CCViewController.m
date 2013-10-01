@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    int wheatStrand = 1;
+    for (int i = 2; i <= 30; i++) {
+        wheatStrand = wheatStrand * 2;
+        NSLog(@"%i", wheatStrand);
+    }
 }
 
 - (void)didReceiveMemoryWarning
