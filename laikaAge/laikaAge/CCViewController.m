@@ -27,8 +27,15 @@
 }
 
 - (IBAction)convertAge:(UIButton *)sender {
-    int laikaAge = [self.laikaAge.text integerValue];
-    int convertedAge = laikaAge * 7;
+    int laikaAge = [self.laikaAge.text intValue];
+    int convertedAge;
+    
+    if (laikaAge > 2) {
+        int newLaikaAge = laikaAge - 2;
+        convertedAge = (10.5 * 2) + (newLaikaAge * 4);
+    } else {
+        convertedAge = laikaAge * 10.5;
+    }
     
     self.humanAge.text = [NSString stringWithFormat:@"%i", convertedAge];
 }
