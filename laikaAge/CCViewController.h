@@ -10,4 +10,10 @@
 
 @interface CCViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *ageOfLaika;
+
+@property (strong, nonatomic) IBOutlet UILabel *showAge;
+
+- (IBAction)convertAge:(UIButton *)sender;
+
 @end

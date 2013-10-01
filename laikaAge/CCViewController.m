@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)convertAge:(UIButton *)sender
+{
+    float laikaAge = [self.ageOfLaika.text floatValue];
+    float humanAge = laikaAge * 7;
+    
+    self.showAge.text = [NSString stringWithFormat:@"%f", humanAge];
+}
+
 @end
