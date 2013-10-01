@@ -18,11 +18,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    int wheatStrand = 1;
-    for (int i = 2; i <= 30; i++) {
-        wheatStrand = wheatStrand * 2;
-        NSLog(@"%i", wheatStrand);
-    }
+    int bottles = 100;
+    int leftoverBottles;
+    
+    for (int i = 100; i > 1; i--) {
+        bottles = bottles - 1;
+        leftoverBottles = bottles - 1;
+        if (bottles == 1){
+            NSLog(@"%i bottle of beer on the wall, %i bottle of beer,\nTake one down, pass it around, no bottles of beer on the wall", bottles, bottles);
+        } else if (bottles == 2){
+            NSLog(@"%i bottles of beer on the wall, %i bottles of beer,\nTake one down, pass it around, %i bottle of beer on the wall", bottles, bottles, leftoverBottles);
+        } else {
+                NSLog(@"%i bottles of beer on the wall, %i bottles of beer,\nTake one down, pass it around, %i bottles of beer on the wall", bottles, bottles, leftoverBottles);
+            }
+        }
 }
 
 - (void)didReceiveMemoryWarning
